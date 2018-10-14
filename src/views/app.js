@@ -107,9 +107,8 @@ var AppView = Backbone.View.extend({
       return
     }
 
-    if (!e.altKey) {
-      return
-    }
+    const hotKey = (utils.isMac && e.altKey) || e.ctrlKey
+    if (!hotKey) return
 
     this.aside.show()
 

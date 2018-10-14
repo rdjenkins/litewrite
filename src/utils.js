@@ -87,4 +87,6 @@ utils.handleAppcacheUpdates = function () {
   }, false)
 }
 
+utils.hotKey = utils.isMac ? 'Alt' : 'Ctrl';
+
 module.exports = utils

@@ -1,5 +1,6 @@
 var _ = require('underscore')
 var Backbone = require('backbone')
+var utils = require('../utils')
 var Doc = require('../models/doc')
 var rsSync = require('rs-adapter')
 var lang = require('../translations')
@@ -42,7 +43,8 @@ var Docs = Backbone.Collection.extend({
 
   welcome: function () {
     if (this.isEmpty()) {
-      this.addNew({ content: lang.welcome })
+      const welcomeContent = lang.welcome.replace(new RegExp(`{Alt}`, 'g'), utils.hotKey)
+      this.addNew({ content: welcomeContent })
     }
   },
 
