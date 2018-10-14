@@ -39,7 +39,9 @@ var AsideView = Backbone.View.extend({
   },
 
   triggerOpening: function () {
-    this.trigger('opening')
+    if (this.snapper.state().info.opening) {
+      this.trigger('opening')
+    }
   },
 
   show: function () {
