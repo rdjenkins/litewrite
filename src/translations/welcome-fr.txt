@@ -13,7 +13,7 @@ Jorin & Jan-Christoph
 
 
 Si vous avez un clavier, vous avez la possibilité d'utiliser des raccourcis claviers pour aller plus vite:
-- Alt + d: nouvelle note
-- Alt + f: aller au champ de recherche
-- Alt + ↑: passer à la note du dessus
-- Alt + ↓: passer à la note du dessous
+- {Alt} + d: nouvelle note
+- {Alt} + f: aller au champ de recherche
+- {Alt} + ↑: passer à la note du dessus
+- {Alt} + ↓: passer à la note du dessous

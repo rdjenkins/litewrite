@@ -12,7 +12,7 @@ Jorin & Jan-Christoph
 
 
 Wenn du eine Tastatur benutzt, kannst du übrigens auch Tastenkürzel nutzen, um schneller zu arbeiten:
-- Alt + d: Neue Notiz
-- Alt + f: Suchfeld fokussieren
-- Alt + ↑: Zur Notiz darüber wechseln
-- Alt + ↓: Zur Notiz darunter wechseln
+- {Alt} + d: Neue Notiz
+- {Alt} + f: Suchfeld fokussieren
+- {Alt} + ↑: Zur Notiz darüber wechseln
+- {Alt} + ↓: Zur Notiz darunter wechseln
