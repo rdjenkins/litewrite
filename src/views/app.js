@@ -110,8 +110,6 @@ var AppView = Backbone.View.extend({
     const hotKey = (utils.isMac && e.altKey) || e.ctrlKey
     if (!hotKey) return
 
-    this.aside.show()
-
     var shortcut = this.shortcuts[e.keyCode]
     if (!shortcut) {
       return
@@ -124,6 +122,9 @@ var AppView = Backbone.View.extend({
   },
 
   shortcuts: {
+    32: function space () {
+      this.aside.toggle()
+    },
     68: function d () {
       this.newDoc()
     },
