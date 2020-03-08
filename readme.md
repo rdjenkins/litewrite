@@ -1,6 +1,13 @@
 # [Litewrite](http://litewrite.net)
 **Unobtrusive Writing** by [Jan-Christoph Borchardt](http://jancborchardt.net) & [Jorin Vogel](https://jorin.me)
 
+## Warning: Unmaintained/In search for new maintainer
+
+**Litewrite hasn't been maintained for a couple of years now so if anyone still interested in using it and likes to step up and take over maintaining/improving/rewriting it, please reach out in the [GitHub issues](https://github.com/litewrite/litewrite/issues/304)**
+
+
+-----
+
 Litewrite was built out of a need to have a simple way of taking notes, having them everywhere, working on any device, regardless if on- or offline.
 
 * simple design
