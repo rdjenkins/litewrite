@@ -108,10 +108,9 @@ utils.Downloader = Backbone.View.extend({
 
   download: function (){
     // proof of concept download to file
-    // getting all the litewrite doc ids
-    document.getElementById('entries').childNodes.forEach(function(item, index) { if (item.tagName === 'LI') {console.log(item.getAttribute('data-id')); } });
-//    var text = document.getElementById('editor').value;
     var text = this.model.get('content')
+    var id = this.model.get('id')
+    console.log("saving " + id)
     text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
