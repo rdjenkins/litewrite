@@ -110,11 +110,10 @@ utils.Downloader = Backbone.View.extend({
     // proof of concept download to file
     var text = this.model.get('content')
     var id = this.model.get('id')
-    console.log("saving " + id)
     text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    anchor.download = "my-litewrite.txt";
+    anchor.download = id+"-litewrite.txt";
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
     anchor.style.display = "none"; // just to be safe!
