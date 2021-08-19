@@ -283,6 +283,7 @@ footer a {
 .delete,
 .share,
 .unshare,
+.download,
 .link {
 	cursor: pointer;
 }
@@ -306,6 +307,7 @@ footer a {
 .delete:hover,
 .share:hover,
 .unshare:hover,
+.download:hover,
 .link:hover {
 	text-decoration: underline;
 }

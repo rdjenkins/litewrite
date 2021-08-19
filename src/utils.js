@@ -89,19 +89,40 @@ utils.handleAppcacheUpdates = function () {
 
 utils.hotKey = utils.isMac ? 'Alt' : 'Ctrl'
 
-download = function (id){
-  // proof of concept download to file
-  var text = document.getElementById(id).value;
-  text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
-  var blob = new Blob([text], { type: "text/plain"});
-  var anchor = document.createElement("a");
-  anchor.download = "my-litewrite.txt";
-  anchor.href = window.URL.createObjectURL(blob);
-  anchor.target ="_blank";
-  anchor.style.display = "none"; // just to be safe!
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-}
+utils.Downloader = Backbone.View.extend({
+  el: '#download',
+
+  initialize: function () {
+    _.bindAll(this, 'render', 'download')
+    this.$el.text("save as file")
+    this.render()
+  },
+
+  render: function () {
+    this.$el.toggleClass('hide')
+  },
+
+  events: {
+    click: 'download',
+  },
+
+  download: function (){
+    // proof of concept download to file
+    // getting all the litewrite doc ids
+    document.getElementById('entries').childNodes.forEach(function(item, index) { if (item.tagName === 'LI') {console.log(item.getAttribute('data-id')); } });
+    var text = document.getElementById('editor').value;
+    text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "my-litewrite.txt";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; // just to be safe!
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+    this.trigger('download');
+  },
+})
 
 module.exports = utils

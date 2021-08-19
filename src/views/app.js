@@ -8,6 +8,7 @@ var SearchView = require('./search')
 var ShareView = require('./share')
 var DeleteView = require('./delete')
 var utils = require('../utils')
+//var Downloader = require('../utils')
 
 // Enable search if at least this number of documents
 var searchMinDocCount = 10
@@ -27,6 +28,7 @@ var AppView = Backbone.View.extend({
     this.date = new DateView({ model: this.model })
     var deleteView = new DeleteView({ model: this.model })
     var share = new ShareView({ model: this.model, collection: this.collection, remote: options.remote })
+    var downloader = new utils.Downloader({ model: this.model })
 
     this.litewrite
       .on('ready', this.editor.render)
