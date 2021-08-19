@@ -94,7 +94,7 @@ utils.Downloader = Backbone.View.extend({
 
   initialize: function () {
     _.bindAll(this, 'render', 'download')
-    this.$el.text("save as file")
+    this.$el.text('save as file')
     this.render()
   },
 
@@ -103,25 +103,25 @@ utils.Downloader = Backbone.View.extend({
   },
 
   events: {
-    click: 'download',
+    click: 'download'
   },
 
-  download: function (){
+  download: function () {
     // proof of concept download to file
     var text = this.model.get('content')
     var id = this.model.get('id')
-    text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
-    var blob = new Blob([text], { type: "text/plain"});
-    var anchor = document.createElement("a");
-    anchor.download = id+"-litewrite.txt";
-    anchor.href = window.URL.createObjectURL(blob);
-    anchor.target ="_blank";
-    anchor.style.display = "none"; // just to be safe!
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
-    this.trigger('download');
-  },
+    text = text.replace(/\n/g, '\r\n') // To retain the Line breaks.
+    var blob = new Blob([text], { type: 'text/plain' })
+    var anchor = document.createElement('a')
+    anchor.download = id + '-litewrite.txt'
+    anchor.href = window.URL.createObjectURL(blob)
+    anchor.target = '_blank'
+    anchor.style.display = 'none' // just to be safe!
+    document.body.appendChild(anchor)
+    anchor.click()
+    document.body.removeChild(anchor)
+    this.trigger('download')
+  }
 })
 
 module.exports = utils

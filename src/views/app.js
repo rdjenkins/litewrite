@@ -8,7 +8,6 @@ var SearchView = require('./search')
 var ShareView = require('./share')
 var DeleteView = require('./delete')
 var utils = require('../utils')
-//var Downloader = require('../utils')
 
 // Enable search if at least this number of documents
 var searchMinDocCount = 10
