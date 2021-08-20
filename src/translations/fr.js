@@ -6,6 +6,7 @@ module.exports = {
   confirmDelete: 'Voulez-vous vraiment supprimer la note ?',
   share: 'partager',
   unshare: 'cacher',
+  saveasfile: 'sauvegarde ça',
   open: 'ouvrir',
   modified: 'dernière modification',
   updateCache: 'Une nouvelle version de Litewrite est disponible. La charger maintenant ?',

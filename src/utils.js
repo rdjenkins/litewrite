@@ -94,7 +94,7 @@ utils.Downloader = Backbone.View.extend({
 
   initialize: function () {
     _.bindAll(this, 'render', 'download')
-    this.$el.text('save as file')
+    this.$el.text(translations.saveasfile)
     this.render()
   },
 

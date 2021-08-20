@@ -6,6 +6,7 @@ module.exports = {
   confirmDelete: 'Are you sure that you want to delete the document?',
   share: 'share',
   unshare: 'unshare',
+  saveasfile: 'save as file',
   open: 'open',
   modified: 'modified',
   updateCache: 'New Litewrite version available. Refresh?',

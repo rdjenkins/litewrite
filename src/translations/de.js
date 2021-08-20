@@ -6,6 +6,7 @@ module.exports = {
   confirmDelete: 'Möchtest du die Notiz wirklich löschen?',
   share: 'teilen',
   unshare: 'verstecken',
+  saveasfile: 'als Datei speichern',
   open: 'öffnen',
   modified: 'zuletzt bearbeitet',
   updateCache: 'Eine neue Version von Litewrite ist verfügbar. Seite neuladen?',
