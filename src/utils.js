@@ -107,7 +107,7 @@ utils.Downloader = Backbone.View.extend({
   },
 
   download: function () {
-    // proof of concept download to file
+    // download to file - based on https://stackoverflow.com/a/48550997/4066963
     var text = this.model.get('content')
     var id = this.model.get('id')
     text = text.replace(/\n/g, '\r\n') // To retain the Line breaks.
@@ -115,7 +115,7 @@ utils.Downloader = Backbone.View.extend({
     text = text + '\r\n\r\n(last edited ' + timestamp.toUTCString() + ')' // Add the date last modified to the bottom of the file
     var blob = new Blob([text], { type: 'text/plain' })
     var anchor = document.createElement('a')
-    anchor.download = id + '-litewrite.txt'
+    anchor.download = id + '-litewrite.txt' // make up the filename based on litewrite id
     anchor.href = window.URL.createObjectURL(blob)
     anchor.target = '_blank'
     anchor.style.display = 'none' // just to be safe!
