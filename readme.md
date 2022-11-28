@@ -5,7 +5,12 @@ Simple cross-platform text note system.
 * works on desktop (Windows, Linux, Mac) and mobile (Android, iOS)
 * private (you decide where your notes are stored - default is in your browser - or you can choose your own remoteStorage)
 * works offline
-* open source (not not active ... see below)
+* open source (based on Litewrite which is now not maintained)
+
+## history
+[NV Notes](https://github.com/NV/notes) a notes web app using 'localStorage' to store the notes in the browser
+[Jan Borchardt's Litewrite](https://github.com/jancborchardt/litewrite) a nicely restyled NV Notes
+[Litewrite](https://github.com/litewrite/litewrite) extended with 'remoteStorage' options to synchronise across devices
 
 I've moved the demo to my own server as the Google Drive 'app' connection part on litewrite had expired.
 
