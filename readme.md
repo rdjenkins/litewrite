@@ -2,7 +2,8 @@
 
 Simple cross-platform text note system.
 
-* private (you decide where your notes are stored - default is in your browser)
+* works on desktop (Windows, Linux, Mac) and mobile (Android, iOS)
+* private (you decide where your notes are stored - default is in your browser - or you can choose your own remoteStorage)
 * works offline
 * open source (not not active ... see below)
 
