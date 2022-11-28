@@ -9,7 +9,8 @@ var Docs = require('./collections/docs')
 var State = require('./models/state')
 
 var dropboxApiKey = '6p6q5imoisraq6k'
-var googleDriveClientID = '376607343336-uabp27dse5s1jkr767jpdeqhj7t90bll.apps.googleusercontent.com' // original for litewrite.net/litewrite (not working)
+var googleDriveClientID = '842410451679-6lmh3acltibeqe6k5j3itu5tgbtv8nsb.apps.googleusercontent.com' // for this pull request on agnate.co.uk/litewrite
+//var googleDriveClientID = '376607343336-uabp27dse5s1jkr767jpdeqhj7t90bll.apps.googleusercontent.com' // original for litewrite.net/litewrite (not working)
 
 function Litewrite () {
   this.initialize()
