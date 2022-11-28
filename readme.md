@@ -1,5 +1,11 @@
 # [Litewrite Branch on Agnate](http://agnate.co.uk/litewrite)
 
+Simple cross-platform text note system.
+
+* private (you decide where your notes are stored - default is in your browser)
+* works offline
+* open source (not not active ... see below)
+
 # [Litewrite](http://litewrite.net)
 **Unobtrusive Writing** by [Jan-Christoph Borchardt](http://jancborchardt.net) & [Jorin Vogel](https://jorin.me)
 
