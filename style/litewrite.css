@@ -468,4 +468,4 @@ mark {
   background-color:rgba(255,255,0,.5);
 }
 
-[aria-hidden="true"] { visibility: hidden; }
+[aria-hidden="true"] { visibility: hidden; } /* fix the non-hiding 'rs-box-connected' notice */
