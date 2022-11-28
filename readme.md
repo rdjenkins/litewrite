@@ -7,6 +7,8 @@ Simple cross-platform text note system.
 * works offline
 * open source (not not active ... see below)
 
+I've moved the demo to my own server as the Google Drive 'app' connection part on litewrite had expired.
+
 # [Litewrite](http://litewrite.net)
 **Unobtrusive Writing** by [Jan-Christoph Borchardt](http://jancborchardt.net) & [Jorin Vogel](https://jorin.me)
 
